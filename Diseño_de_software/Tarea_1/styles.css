@@ -4,22 +4,7 @@
     box-sizing: border-box;
 }
 #bg_color_1 {
-    background-color:#7FBD32;
-}
-#text_color_1 {
-    color:#7FBD32;
-}
-#bg_color_2 {
-    background-color:#CBE432;
-}
-#text_color_2 {
-    color: #CBE432;
-}
-#bg_color_3{
-    background-color: #F3F7D4;
-}
-#text_color_3{
-    color: #F3F7D4;
+    background-color:#246e67;
 }
 
 #search{
@@ -32,31 +17,51 @@
   .searchbar {
     position: absolute;
     overflow: hidden;
-    background-color: #7FBD32;
+    background-color: #191a1f;
     backdrop-filter: blur(2px);
   }
-  .searchbar-icon {
-    position: absolute;
-    right: 27px;
-    top: 25px;
-    background-color: transparent;
-    color: #CBE432;
-    cursor: pointer;
-  }
-  input[type=text] {
+  input[type=search] {
     padding: 9px;
     border: none;
-    margin: 16px 14px;
+    margin: 8px;
     font-size: 18px;
-    background-color: #F3F7D4;
+    background-color: #2e3038;
     text-align: left;
     text-indent: 8px;
     outline: none;
   }
-  .searchbar , input[type=text] {
+  .searchbar , input[type=search] {
     border-radius: 30px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
     
   }
   
   /* By Özlem Altınışık */
+
+.navbar {
+  overflow: hidden;
+  background: rgb(33,35,41);
+  background: linear-gradient(180deg, rgba(33,35,41,1) 57%, rgba(31,33,38,1) 100%);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+#head {
+  margin-left: 40px;
+}
+#main {
+  padding: 16px;
+  margin-top: 80px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+#main_vid {
+  margin-left: 60px;
+  margin-right: 45px;
+  margin-top: 110px;
+}
+#boton1{
+  margin-left: 135px;
+}
+#boton2{
+  margin-left: 20px;
+}
