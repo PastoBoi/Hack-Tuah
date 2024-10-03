@@ -7,6 +7,12 @@
 body{
   font-family: 'Poppins';
   background-color: #100D21;
+  background-image: url('https://img.freepik.com/fotos-premium/flores-cerezo-flor-creado-ia-generativa_68747-425.jpg'); /* Cambia esto por la ruta de tu imagen */
+  background-size: cover; /* Ajusta el fondo al tamaño de la ventana */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que se repita la imagen */
+  height: 100vh; /* Asegura que el fondo ocupe el 100% del alto de la ventana */
+  margin: 0;
 }
 
 div{
