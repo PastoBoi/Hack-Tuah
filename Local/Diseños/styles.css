@@ -24,6 +24,13 @@ h4{
   margin-top: 2%;
 }
 
+#bg{
+  color: #ffffff;
+  background-color: #340631;
+  margin-left: 4%;
+  margin-right: 6%;
+}
+
 #button1{
   color: #ffffff;
   background-color: #281f51;
@@ -160,4 +167,12 @@ h4{
 
 .input-right {
   text-indent: 20px; /* Ajusta el valor según cuánto quieras mover el placeholder */
+}
+
+.text-ellipsis {
+  white-space: nowrap;         /* Prevents the text from wrapping */
+  overflow: hidden;            /* Hides the overflow text */
+  text-overflow: ellipsis;     /* Adds the ellipsis at the end */
+  display: block;              /* Ensures it works on block elements like <p> */
+  max-width: 100%;             /* Set max width to restrict the content */
 }
