@@ -160,10 +160,6 @@ h4{
   object-fit: cover;
 }
 
-#root{
-  max-height: 1%;
-}
-
 .input-right {
   text-indent: 20px; /* Ajusta el valor según cuánto quieras mover el placeholder */
 }
