@@ -2,12 +2,17 @@ const inputText = document.getElementById('inputText');
 const output = document.getElementById('output');
 const submitButton = document.getElementById('submitButton');
 
+// Dynamically add the comment icon to the submit button
+const commentIcon = document.createElement('i');
+commentIcon.className = 'fa-regular fa-comment me-2';
+submitButton.insertBefore(commentIcon, submitButton.firstChild);
+
 // Listen for click events on the submit button
 submitButton.addEventListener('click', function() {
     // Create a new paragraph element for the text
     const newText = document.createElement('p');
     newText.textContent = inputText.value;
-    newText.style.border = "none";  
+    newText.style.border = "none";
     newText.style.padding = "10px";  
     newText.style.marginTop = "10px";  
     newText.style.borderRadius = "10px";
@@ -31,6 +36,7 @@ submitButton.addEventListener('click', function() {
     likeButton.appendChild(heartIcon); // Append the heart icon to the button
     likeButton.appendChild(document.createTextNode(' Like 0'));  // Button starts with "Like 0"
     likeButton.style.marginBottom = '10px'; // Space between the text and like button
+    likeButton.style.marginTop = '10px';
     likeButton.className = 'btn btn-outline-light'; // Bootstrap styling (optional)
     likeButton.style.background = "#a6179d";
     likeButton.style.color = "#ffffff";
