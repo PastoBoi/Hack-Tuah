@@ -2,7 +2,7 @@ const inputText = document.getElementById('inputText');
 const output = document.getElementById('output');
 const submitButton = document.getElementById('submitButton');
 
-// Escucha el evento click del botón
+// Listen for click events on the submit button
 submitButton.addEventListener('click', function() {
     // Create a new paragraph element for the text
     const newText = document.createElement('p');
@@ -24,9 +24,12 @@ submitButton.addEventListener('click', function() {
     newImage.style.height = "auto";   // Maintain aspect ratio
     newImage.style.borderRadius = "30px";
 
-    // Create a "like" button
+    // Create a "like" button with heart icon
     const likeButton = document.createElement('button');
-    likeButton.textContent = 'Like 0';  // Button starts with "Like 0"
+    const heartIcon = document.createElement('i'); // Create an icon element
+    heartIcon.className = 'fa-heart far'; // Set initial class to regular heart
+    likeButton.appendChild(heartIcon); // Append the heart icon to the button
+    likeButton.appendChild(document.createTextNode(' Like 0'));  // Button starts with "Like 0"
     likeButton.style.marginBottom = '10px'; // Space between the text and like button
     likeButton.className = 'btn btn-outline-light'; // Bootstrap styling (optional)
     likeButton.style.background = "#a6179d";
@@ -37,7 +40,8 @@ submitButton.addEventListener('click', function() {
     let liked = false; // Initial state is "not liked"
     likeButton.addEventListener('click', function() {
         liked = !liked; // Toggle the "liked" state
-        likeButton.textContent = liked ? 'Like 1' : 'Like 0'; // Update the button text accordingly
+        heartIcon.className = liked ? 'fa-heart fas' : 'fa-heart far'; // Update heart icon class
+        likeButton.childNodes[1].nodeValue = liked ? ' Like 1' : ' Like 0'; // Update the button text accordingly
     });
 
     // Create a container for the text and image
