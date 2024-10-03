@@ -11,6 +11,8 @@ body{
   background-size: cover; /* Ajusta el fondo al tamaño de la ventana */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que se repita la imagen */
+  background-color: rgba(0, 0, 0, 0.75); /* Fondo negro semitransparente */
+  background-blend-mode: overlay; /* Mezcla la imagen con el color de fondo */
   height: 100vh; /* Asegura que el fondo ocupe el 100% del alto de la ventana */
   margin: 0;
 }
