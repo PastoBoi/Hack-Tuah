@@ -31,8 +31,7 @@ h4{
 
 #button2{
   color: #ffffff;
-  background-color: #4b2fc8;
-  margin-left: 10px;
+  background-color: #a6179d;
 }
 
 #button1:hover {
@@ -40,7 +39,17 @@ h4{
 }
 
 #button2:hover {
-  background-color: #2e1c7e;
+  background-color: #720f6c;
+}
+
+#submitButton{
+  color: #ffffff;
+  background-color: #281f51;
+}
+
+#submitButton:hover{
+  color: #ffffff;
+  background-color: #1b1536;
 }
 
 #album{
@@ -60,6 +69,7 @@ h4{
 
 #bg_color_1 {
     background-color:#246e67;
+    opacity: 0.5;
 }
 
 #search{
@@ -96,11 +106,13 @@ h4{
     width: 960px;
   }
   #inputText {
+    margin-left: 20px;
     height: 50px;
-    width: 890px;
-    border-radius: 10px;
-    background: rgb(33,35,41);
-    background: linear-gradient(180deg, rgba(33,35,41,1) 57%, rgba(31,33,38,1) 100%);
+    background: #340631; 
+    border: none; 
+    width: 90%; 
+    text-indent: 15px; 
+    color: #fff;
   }
 
   .container {
@@ -116,6 +128,7 @@ h4{
   overflow: hidden;
   background: rgb(33,35,41);
   background: linear-gradient(180deg, rgba(33,35,41,1) 57%, rgba(31,33,38,1) 100%);
+  opacity: 0.5;
   position: fixed;
   top: 0;
   width: 100%;
@@ -131,10 +144,7 @@ h4{
 #main_vid {
   margin-left: 60px;
   margin-right: 45px;
-  margin-top: 110px;
-}
-#boton1{
-  margin-left: 135px;
+  margin-top: 30px;
 }
 #boton2{
   margin-left: 20px;

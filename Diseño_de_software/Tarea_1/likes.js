@@ -12,11 +12,11 @@
   
     return (
       <div>
-        <ul class="d-flex justify-content-end">
-        <button onClick={handleClick} id="boton1" class="mt-1 btn btn-outline-light" type="button">
+        <ul class="d-flex">
+        <button onClick={handleClick} type="button" class="btn rounded-3" id="button2">
           Likes {likes}
         </button>
-        <button onClick={handleClick2} id="boton2" class="mt-1 btn btn-outline-light" type="button">
+        <button onClick={handleClick2} type="button" class="ms-3 btn rounded-3" id="button1">
           Dislikes {dislikes}
         </button>
         </ul>

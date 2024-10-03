@@ -8,11 +8,13 @@
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <script src="likes.js" type="text/jsx"></script>
     <script src="comentarios.js"></script>
     <title>Document</title>
 </head>
 <body class="bg-dark">
+    <!--
     <header class="d-flex flex-row p-2 justify-content-between navbar">
         <a href="MiniYoutube.html" id="head" class="link-offset-2 link-underline link-underline-opacity-0">
             <header class="ms-3 d-flex flex-column p-3 rounded" id="bg_color_1">
@@ -26,27 +28,27 @@
             </h1>
         </div>
     </header>
-
+    -->
 
 
     <div class="d-flex flex-row justify-content-between" id="main_vid">
-        <div>
-        <video class="rounded" width="960" height="540" controls>
+        <div style="width: 70%;">
+        <video class="rounded" width="100%" height="auto" controls>
             <source src="movie1.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
         <h3 class="d-flex flex-row fs-4 mt-2">
-            <img class="rounded-circle" src="img1.jpg" alt="Channel icon" width="50" height="50">
-            <p class="mt-2 ms-3 text-light">ずっと真夜中でいいのに。『眩しいDNAだけ』MV</p>
-            <div id="root"></div>
+            <img class="rounded-circle align-self-center" src="img1.jpg" alt="Channel icon" width="50" height="50">
+            <p class="mt-2 ms-3 text-light" style="max-width: 65%;">ずっと真夜中でいいのに。『脳裏上のクラッカー』MV (Noriue no cracker)</p>
+            <div class="align-self-center" id="root"></div>
         </h3>
         <p class="">
             <p class="d-flex flex-row">
-                <img class="rounded-circle" src="img1.jpg" alt="Channel icon" width="50" height="50">
-                <input class="ms-3 text-light border border-1 border-light-subtle bg-dark rounded-5 input-right" type="text" id="inputText" placeholder="Escribe aquí..."> 
+                <img class="align-self-center rounded-circle" src="img1.jpg" alt="Channel icon" width="50" height="50">
+                <input id="inputText" class="rounded-3" type="text" name="search" placeholder="Agrega un comentario…">
             </p>
             
-            <p><button class="btn btn-outline-light" id="submitButton">Comentar</button></p>
+            <p><button type="btn" class="btn rounded-3" id="submitButton">Comentar</button></p>
             
             <div id="output" class="text-light"></div>
             
