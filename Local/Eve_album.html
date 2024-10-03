@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="Diseños/styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>Álbum UI</title>
+    <link rel="icon" href="multimedia/title.png" type="image/icon type">
+</head>
+<body>
+    <div class="d-flex flex-row align-items-start" style="margin-left: 8%; margin-top: 1%;">
+        <div class="d-flex flex-column" style="width: 22%;">
+            <div id="buscar" style="position: relative; display: inline-block; margin-left: -10px;">
+                <input class="p-2 rounded-3" style="background-color: #340631; border: none; width: 100%; color: #a6179d; text-indent: 30px; color: #fff;" type="search" name="search" placeholder="Buscar Álbum...">
+                <i class="fas fa-search" style="position: absolute; top: 50%; left: 20px; transform: translateY(-50%); color: #a6179d;"></i>
+            </div>
+
+            <h4 class="text-light" style="margin-top: 10%; font-weight: bold;">Lista de Álbumes</h4>
+
+            <div style="width: 100%;">
+                <a href="test.html" class="link-offset-2 link-underline link-underline-opacity-0">
+                    <div class="mt-2 d-flex">
+                        <img id="album" src="multimedia/album1.jpg" alt="ola">
+                        <div class="mb-3 d-flex flex-column justify-content-end ms-2">
+                            <div class="text-light">潜潜話 (Hisohiso banashi)</div>
+                            <div class="text-light text-opacity-50">Álbum • 13 canciones</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="test.html" class="link-offset-2 link-underline link-underline-opacity-0">
+                    <div class="mt-2 d-flex">
+                        <img id="album" src="multimedia/album2.jpg" alt="ola">
+                        <div class="mb-3 d-flex flex-column justify-content-end ms-2">
+                            <div class="text-light">ぐされ (Gusare)</div>
+                            <div class="text-light text-opacity-50">Álbum • 13 canciones</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="test.html" class="link-offset-2 link-underline link-underline-opacity-0">
+                    <div class="mt-2 d-flex">
+                        <img id="album" src="multimedia/album3.jpg" alt="ola">
+                        <div class="mb-3 d-flex flex-column justify-content-end ms-2">
+                            <div class="text-light">沈香学 (Jinkougaku)</div>
+                            <div class="text-light text-opacity-50">Álbum • 18 canciones</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="test.html" class="link-offset-2 link-underline link-underline-opacity-0">
+                    <div class="mt-2 d-flex">
+                        <img id="album" src="multimedia/sencillos.jpg" alt="ola">
+                        <div class="mb-3 d-flex flex-column justify-content-end ms-2">
+                            <div class="text-light">Sencillos</div>
+                            <div class="text-light text-opacity-50">XX canciones</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="d-flex flex-column" style="width: 76%; max-width: 76%;">
+            <div class="d-flex flex-row" style="width: 95%; margin-left: 2%; right: 0;">
+                <img src="multimedia/album1.jpg" id="thumbnail" class="rounded-circle" alt="" style="margin-left: 3%; margin-top: 2%; height: 150px; width: 150px;">
+                <div style="margin-top: 5%; margin-left: 1%; width: 55%;">
+                    <h4 class="text-light">潜潜話 (Hisohiso banashi)</h4>
+                    <a href="zutomayo.html" class="link-offset-2 link-underline link-underline-opacity-0"><h5 class="text-light text-opacity-50">By Zutomayo</h5></a>
+                </div>
+                <div class="d-flex flex-row text-light" style="max-height: 40px; margin-top: 7%;">
+                    <button type="button" class="btn rounded-4" id="button1">Seguir</button>
+                    <button type="button" style="margin-left: 10px;" class="btn rounded-4" id="button2">Compartir</button>
+                </div>
+            </div>
+            <h4 class="text-light" style="margin-left: 5%; margin-top: 3%; font-weight: bold;">Canciones en el Álbum</h4>
+            <div class="d-flex flex-wrap" style="margin-left: 3%; max-width: 90%;">
+                <div class="position-relative ms-3 mt-3" style="width: 210px; height: 118px;">
+                    <a href="video_1.html">
+                        <img src="multimedia/thumbnail1.jpg" id="thumbnail" class="rounded-4" style="width: 100%; height: 100%;" alt="">
+                    </a>
+                    <div class="position-absolute bottom-0 start-0 text-white px-2" 
+                    style="font-weight: bold; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Noriue no cracker</div>
+                </div>
+                <div class="position-relative ms-3 mt-3" style="width: 210px; height: 118px;">
+                    <a href="video_2.html">
+                        <img src="multimedia/thumbnail2.jpg" id="thumbnail" class="rounded-4" style="width: 100%; height: 100%;" alt="">
+                    </a>
+                    <div class="position-absolute bottom-0 start-0 text-white px-2" 
+                    style="font-weight: bold; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Kan saete Kuyashiiwa</div>
+                </div>
+                <div class="position-relative ms-3 mt-3" style="width: 210px; height: 118px;">
+                    <a href="video_3.html">
+                        <img src="multimedia/thumbnail3.jpg" id="thumbnail" class="rounded-4" style="width: 100%; height: 100%;" alt="">
+                    </a>
+                    <div class="position-absolute bottom-0 start-0 text-white px-2" 
+                    style="font-weight: bold; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Inemuri Enseitai</div>
+                </div>
+                <div class="position-relative ms-3 mt-3" style="width: 210px; height: 118px;">
+                    <a href="video_4.html">
+                        <img src="multimedia/thumbnail4.jpg" id="thumbnail" class="rounded-4" style="width: 100%; height: 100%;" alt="">
+                    </a>
+                    <div class="position-absolute bottom-0 start-0 text-white px-2" 
+                    style="font-weight: bold; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Haze Haseru Haterumade</div>
+                </div>
+                <div class="position-relative ms-3 mt-3" style="width: 210px; height: 118px;">
+                    <a href="video_5.html">
+                        <img src="multimedia/thumbnail5.jpg" id="thumbnail" class="rounded-4" style="width: 100%; height: 100%;" alt="">
+                    </a>
+                    <div class="position-absolute bottom-0 start-0 text-white px-2" 
+                    style="font-weight: bold; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Kettobashita Moufu</div>
+                </div>
+                <div class="position-relative ms-3 mt-3" style="width: 210px; height: 118px;">
+                    <a href="video_6.html">
+                        <img src="multimedia/thumbnail6.jpg" id="thumbnail" class="rounded-4" style="width: 100%; height: 100%;" alt="">
+                    </a>
+                    <div class="position-absolute bottom-0 start-0 text-white px-2" 
+                    style="font-weight: bold; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Dear. Mr"F"</div>
+                </div>
+                <div class="position-relative ms-3 mt-3" style="width: 210px; height: 118px;">
+                    <a href="video_7.html">
+                        <img src="multimedia/thumbnail7.jpg" id="thumbnail" class="rounded-4" style="width: 100%; height: 100%;" alt="">
+                    </a>
+                    <div class="position-absolute bottom-0 start-0 text-white px-2" 
+                    style="font-weight: bold; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Konnakoto Soudou</div>
+                </div>
+                <div class="position-relative ms-3 mt-3" style="width: 210px; height: 118px;">
+                    <a href="video_8.html">
+                        <img src="multimedia/thumbnail8.jpg" id="thumbnail" class="rounded-4" style="width: 100%; height: 100%;" alt="">
+                    </a>
+                    <div class="position-absolute bottom-0 start-0 text-white px-2" 
+                    style="font-weight: bold; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Mabushii DNA Dake</div>
+                </div>
+                <div class="position-relative ms-3 mt-3" style="width: 210px; height: 118px;">
+                    <a href="video_9.html">
+                        <img src="multimedia/thumbnail9.jpg" id="thumbnail" class="rounded-4" style="width: 100%; height: 100%;" alt="">
+                    </a>
+                    <div class="position-absolute bottom-0 start-0 text-white px-2" 
+                    style="font-weight: bold; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Humanoid</div>
+                </div>
+                <div class="position-relative ms-3 mt-3" style="width: 210px; height: 118px;">
+                    <a href="video_10.html">
+                        <img src="multimedia/thumbnail3.jpg" id="thumbnail" class="rounded-4" style="width: 100%; height: 100%;" alt="">
+                    </a>
+                    <div class="position-absolute bottom-0 start-0 text-white px-2" 
+                    style="font-weight: bold; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Glass To Rum Raisin</div>
+                </div>
+                <div class="position-relative ms-3 mt-3" style="width: 210px; height: 118px;">
+                    <a href="video_11.html">
+                        <img src="multimedia/thumbnail11.jpg" id="thumbnail" class="rounded-4" style="width: 100%; height: 100%;" alt="">
+                    </a>
+                    <div class="position-absolute bottom-0 start-0 text-white px-2" 
+                    style="font-weight: bold; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Seigi</div>
+                </div>
+                <div class="position-relative ms-3 mt-3" style="width: 210px; height: 118px;">
+                    <a href="video_12.html">
+                        <img src="multimedia/thumbnail3.jpg" id="thumbnail" class="rounded-4" style="width: 100%; height: 100%;" alt="">
+                    </a>
+                    <div class="position-absolute bottom-0 start-0 text-white px-2" 
+                    style="font-weight: bold; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Yasashiku Last Smile</div>
+                </div>
+                <div class="position-relative ms-3 mt-3" style="width: 210px; height: 118px;">
+                    <a href="video_13.html">
+                        <img src="multimedia/thumbnail13.jpg" id="thumbnail" class="rounded-4" style="width: 100%; height: 100%;" alt="">
+                    </a>
+                    <div class="position-absolute bottom-0 start-0 text-white px-2" 
+                    style="font-weight: bold; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Byoushinwo Kamu</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
