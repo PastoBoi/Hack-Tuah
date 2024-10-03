@@ -3,6 +3,54 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+  font-family: 'Poppins';
+  background-color: #100D21;
+}
+
+div{
+  margin-left: 0%;
+}
+
+h4{
+  margin-top: 2%;
+}
+
+#button1{
+  color: #ffffff;
+  background-color: #281f51;
+}
+
+#button2{
+  color: #ffffff;
+  background-color: #4b2fc8;
+  margin-left: 10px;
+}
+
+#button1:hover {
+  background-color: #1b1536;
+}
+
+#button2:hover {
+  background-color: #2e1c7e;
+}
+
+#album{
+  margin-top: 1%;
+  width: 80px;
+  height: 80px;
+  border-radius: 15%;
+  object-fit: cover;
+}
+
+#buscar{
+  margin-top: 10%;
+}
+#buscar-input{
+  color: #aaa; /* Adjust the color as needed */
+}
+
 #bg_color_1 {
     background-color:#246e67;
 }
