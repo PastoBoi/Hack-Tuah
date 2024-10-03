@@ -20,7 +20,7 @@ function HomePage() {
           <i className={`fa-heart ${liked ? 'fas' : 'far'}`}></i> Likes {liked ? 1 : 0}
         </button>
         <button onClick={handleClick2} type="button" className="ms-3 btn rounded-3" id="button1">
-          Dislikes {disliked ? 1 : 0}
+          <i className={`fa-thumbs-down ${disliked ? 'fas' : 'far'}`}></i> Dislikes {disliked ? 1 : 0}
         </button>
       </ul>
     </div>
