@@ -16,7 +16,7 @@ function HomePage() {
   return (
     <div>
       <ul className="d-flex">
-        <button onClick={handleClick} type="button" className="ms-1 btn rounded-3" id="button2">
+        <button onClick={handleClick} type="button" className="btn rounded-3" id="button2">
           <i className={`fa-heart ${liked ? 'fas' : 'far'}`}></i> Likes {liked ? 1 : 0}
         </button>
         <button onClick={handleClick2} type="button" className="ms-3 btn rounded-3" id="button1">
