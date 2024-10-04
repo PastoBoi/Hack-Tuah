@@ -26,7 +26,7 @@ h4{
 
 #bg{
   color: #ffffff;
-  background-color: #340631;
+  background-color: #3406318e;
   margin-left: 4%;
   margin-right: 6%;
 }
@@ -94,7 +94,7 @@ h4{
   overflow-y: auto;             /* Enable vertical scrolling */  
   margin-top: 10px;
   padding: 10px;                /* Padding inside the container */
-  background-color: #340631;    /* Background color */  
+  background-color: #3406318e;    /* Background color */  
   border-radius: 10px;
 }
 
@@ -104,16 +104,16 @@ h4{
 }  
 
 .scrollable-container::-webkit-scrollbar-track {  
-  background: #340631;          /* Color of the scrollbar track */  
+  background: #3406318e;          /* Color of the scrollbar track */  
 }  
 
 .scrollable-container::-webkit-scrollbar-thumb {  
-  background: #a6179d;             /* Color of the scrollbar thumb */  
+  background: #a6179d8e;             /* Color of the scrollbar thumb */  
   border-radius: 6px;           /* Rounded edges for the thumb */  
 }  
 
 .scrollable-container::-webkit-scrollbar-thumb:hover {  
-  background: #720f6c;             /* Color of thumb on hover */  
+  background: #720f6c8e;             /* Color of thumb on hover */  
 }
 
   .searchbar {
