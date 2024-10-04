@@ -12,6 +12,8 @@ body{
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que se repita la imagen */
   background-blend-mode: overlay; /* Mezcla la imagen con el color de fondo */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh; /* Asegura que el fondo ocupe el 100% del alto de la ventana */
   margin: 0;
 }
@@ -137,6 +139,18 @@ h4{
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2); 
   }
 
+#notification{
+  background-color: #3406318e;
+  border: none;
+  border-radius: 10px;
+}
+
+#notification:hover{
+  background-color: #570a528e;
+  border: none;
+  border-radius: 10px;
+}
+
   #comentario{
     height: 50px;
     width: 960px;
@@ -163,7 +177,7 @@ h4{
 
 .navbar {
   overflow: hidden;
-  background: #1b041a;
+  background: #1b041a48;
   position: fixed;
   top: 0;
   width: 100%;
@@ -179,7 +193,7 @@ h4{
 #main_vid {
   margin-left: 60px;
   margin-right: 45px;
-  margin-top: 30px;
+  margin-top: 70px;
 }
 #boton2{
   margin-left: 20px;

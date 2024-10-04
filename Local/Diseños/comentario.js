@@ -23,7 +23,7 @@ submitButton.addEventListener('click', function() {
 
     // Create a new image element
     const newImage = document.createElement('img');
-    newImage.src = "multimedia/img1.jpg";  // Replace with the actual image URL or path
+    newImage.src = "multimedia/icon.jpg";  // Replace with the actual image URL or path
     newImage.alt = "Comment Image";
     newImage.style.width = "50px";   // Customize size as needed
     newImage.style.height = "auto";   // Maintain aspect ratio
