@@ -113,7 +113,7 @@ h4{
 }  
 
 .scrollable-container::-webkit-scrollbar-thumb:hover {  
-  background: #720f6c8e;             /* Color of thumb on hover */  
+  background: #720f6c8e;            /* Color of thumb on hover */  
 }
 
   .searchbar {
@@ -163,9 +163,7 @@ h4{
 
 .navbar {
   overflow: hidden;
-  background: rgb(33,35,41);
-  background: linear-gradient(180deg, rgba(33,35,41,1) 57%, rgba(31,33,38,1) 100%);
-  opacity: 0.5;
+  background: #1b041a;
   position: fixed;
   top: 0;
   width: 100%;
