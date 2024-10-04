@@ -86,6 +86,36 @@ h4{
     align-items: center;
     justify-content: center;
   }
+
+/* Basic styling for the scrollable container */  
+.scrollable-container {  
+  width: 300px;                  /* Width of the container */  
+  max-height: 500px;            /* Max height to enable scrolling */  
+  overflow-y: auto;             /* Enable vertical scrolling */  
+  margin-top: 10px;
+  padding: 10px;                /* Padding inside the container */
+  background-color: #340631;    /* Background color */  
+  border-radius: 10px;
+}
+
+/* Custom scrollbar styles for WebKit browsers */  
+.scrollable-container::-webkit-scrollbar {  
+  width: 12px;                  /* Width of the scrollbar */  
+}  
+
+.scrollable-container::-webkit-scrollbar-track {  
+  background: #340631;          /* Color of the scrollbar track */  
+}  
+
+.scrollable-container::-webkit-scrollbar-thumb {  
+  background: #a6179d;             /* Color of the scrollbar thumb */  
+  border-radius: 6px;           /* Rounded edges for the thumb */  
+}  
+
+.scrollable-container::-webkit-scrollbar-thumb:hover {  
+  background: #720f6c;             /* Color of thumb on hover */  
+}
+
   .searchbar {
     position: absolute;
     overflow: hidden;
