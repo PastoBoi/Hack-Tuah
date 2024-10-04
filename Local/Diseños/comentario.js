@@ -9,6 +9,12 @@ submitButton.insertBefore(commentIcon, submitButton.firstChild);
 
 // Listen for click events on the submit button
 submitButton.addEventListener('click', function() {
+    // Check if the input is empty
+    if (inputText.value.trim() === '') {
+        alert('Please enter a comment before submitting!');
+        return; // Exit the function if the input is empty
+    }
+
     // Create a new paragraph element for the text
     const newText = document.createElement('p');
     newText.textContent = inputText.value;
@@ -20,6 +26,8 @@ submitButton.addEventListener('click', function() {
     newText.style.width = "90%";
     newText.style.background = "#340631";
     newText.style.textIndent = "10px";
+    newText.style.wordWrap = "break-word";    // Ensures text wraps within the box
+    newText.style.overflowWrap = "break-word"; // Cross-browser support for text wrapping
 
     // Create a new image element
     const newImage = document.createElement('img');
@@ -54,6 +62,7 @@ submitButton.addEventListener('click', function() {
     const container = document.createElement('div');
     container.style.display = "flex";  // Aligns text and image in a row
     container.style.alignItems = "center";  // Centers the image vertically with the text
+    container.style.flexWrap = "wrap"; // Ensure content wraps properly in smaller screens
     container.appendChild(newImage);
     container.appendChild(newText);
 
